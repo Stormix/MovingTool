@@ -1,6 +1,6 @@
 <?php 
 /*
-======================================================================
+============================================================================
  Copyright : Copyright (c) 2016 Anas Mazouni - Stormix. All rights reserved.
  Version : 1.0
  Release Date : 28-07-2016
@@ -10,10 +10,12 @@
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
-----------------------------------------------------------------------
- http://www.Stormix.co/               
- http://www.facebook.com/stormiix
-======================================================================
+----------------------------------------------------------------------------
+ Website : https://www.Stormix.co/               
+ Facebook : https://www.facebook.com/stormiix
+ Twitter : https://www.twitter.com/Stormix4
+============================================================================
+
 */
 
 //Unlimited max execution time
@@ -28,8 +30,10 @@ $url = 'https://stormix.co/dummy.jpg'; //The file to download
 $step = 1024 * 100; //100Kb chunks are moved on each loop
 
 /* HANDY FUNCTIONS */
-//Ignore this and scroll to ligne : 91
+//Ignore this and scroll to line : 91
+
  /**
+ * Source : http://stackoverflow.com/a/2602624
  * Returns the size of a file without downloading it, or -1 if the file
  * size could not be determined.
  *
@@ -43,7 +47,6 @@ $step = 1024 * 100; //100Kb chunks are moved on each loop
 function curl_get_file_size( $url ) {
   // Assume failure.
   $result = -1;
-
   $curl = curl_init( $url );
 
   // Issue a HEAD request and follow any redirects.
@@ -52,7 +55,6 @@ function curl_get_file_size( $url ) {
   curl_setopt( $curl, CURLOPT_RETURNTRANSFER, true );
   curl_setopt( $curl, CURLOPT_FOLLOWLOCATION, true );
   curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
- // curl_setopt( $curl, CURLOPT_USERAGENT, get_user_agent_string() );
 
   $data = curl_exec( $curl );
   curl_close( $curl );
