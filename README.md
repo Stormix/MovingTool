@@ -3,7 +3,7 @@
  [![GitHub issues](https://img.shields.io/github/issues/Stormiix/MovingTool.svg?style=flat-square)](https://github.com/Stormiix/MovingTool/issues)
 [![GitHub forks](https://img.shields.io/github/forks/Stormiix/MovingTool.svg?style=flat-square)](https://github.com/Stormiix/MovingTool/network)
 [![GitHub stars](https://img.shields.io/github/stars/Stormiix/MovingTool.svg?style=flat-square)](https://github.com/Stormiix/MovingTool/stargazers)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/Stormiix/MovingTool/.svg?style=social?style=flat-square)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
+ 
  
 This tool is one of the most handy tools I've ever built , it helped me move +1000 Website from host to host , usually , when I build something for my clients , it's under <b>https://Stormix.co/Projects/PROJECTNAME</b> but when the clients likes it , I'de usually need to move it to a his host and for some websites the size can go up to +100 MB ( and even more, I had to move a 2GB website once..), which is tiring to download & re-upload via FTP (Especially if you have a slow internet connection like mine). <br>So I built this tool , I only need to compress all the files, add a direct download link of that zip to the PHP file and let it handle the rest.
 <br>That's it !
