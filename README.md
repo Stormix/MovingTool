@@ -50,7 +50,7 @@ None for now.
   
 # Resources
 **Materialize CSS**
-[Materialize](http://materializecss.com/) Materialize CSS.<br>
+[Materialize](http://materializecss.com/)<br>
 
 
  
